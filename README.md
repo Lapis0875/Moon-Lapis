@@ -1,7 +1,14 @@
+# Lapis0875's Github pages
+I made this website to use as my tech-blog and portfolio.
+I used Jekyll to construct this, and I used a theme **[Moon](https://taylantatli.github.io/Moon)**
+From here on down, I'll give you a description of the theme.
+
+
+
 # Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
+
 ## `Sorry guys but there will be no update until I buy a new laptop.`
-    
+
 ######(If you like this theme or using it, please give a :star: for motivation.)
 
 **[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
