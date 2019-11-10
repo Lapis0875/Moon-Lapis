@@ -1,7 +1,7 @@
 # Site navigation links
 
 - title: Home
-  url: 
+  url:
 
 - title: Blog
   url: /blog/
@@ -13,4 +13,4 @@
   url: /about/
 
 - title: Moon
-  url: http://taylantatli.me/Moon
+  url: http://taylantatli.github.io/Moon/about

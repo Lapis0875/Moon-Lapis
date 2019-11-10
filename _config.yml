@@ -1,11 +1,11 @@
 # Site
 title:              Lapis
-bio:                'Korean student, programmer.'
+bio:                'Korean student, programmer. Interested in Game developement, App, Web developement, ML.'
 description:        "Lapis0875's github pages. I'm using this site as my portfolio page."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo_lapis.png'
-background:         'assets/img/background.jpg'
+background:         'assets/img/jeju-ocean02.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://lapis0875.github.io/
@@ -73,4 +73,4 @@ jekyll-mentions:
     base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, _archived]
