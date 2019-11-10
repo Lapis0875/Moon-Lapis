@@ -1,6 +1,6 @@
 # Lapis0875's Github pages
 I made this website to use as my tech-blog and portfolio.
-I used Jekyll to construct this, and I used a theme **[Moon](https://taylantatli.github.io/Moon)**
+I used Jekyll to construct this, and I used a theme **[Moon](https://taylantatli.github.io/Moon)**\n
 From here on down, I'll give you a description of the theme.
 
 
