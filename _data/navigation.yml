@@ -1,10 +1,10 @@
 # Site navigation links
 
 - title: Blog
-  url: /blog/
+  url: blog/
 
 - title: Projects
-  url: /projects/
+  url: projects/
 
 - title: Moon
   url: http://taylantatli.github.io/Moon/about
