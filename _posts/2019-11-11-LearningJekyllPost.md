@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll 블로그에서 Markdown 형식의 파일로 글 쓰는 법 알아보기"
 date: 2019-11-11
-excerpt: "Jekyll에서 .md 형식의 글 쓰기"
+categories: jekyll update
 tags: [learning, Jekyll]
 comments: true
 ---
