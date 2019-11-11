@@ -2,7 +2,7 @@
 title:              Lapis
 bio:                'Korean student, programmer. Interested in Game developement, App, Web developement, ML.'
 description:        "Lapis0875's github pages. I'm using this site as my portfolio page."
-reading_time:       true
+reading_time:       false
 words_per_minute:   200
 logo:               'assets/img/logo_lapis.png'
 background:         'assets/img/jeju-ocean02.jpg'
