@@ -11,7 +11,7 @@ locale:             en_US
 url:                https://lapis0875.github.io/
 
 # Jekyll
-permalink:          /:title/
+permalink:          :title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
