@@ -25,8 +25,8 @@ layout: compress
                     {% for post in site.meetups %} 
                         {% if post == null %}
                         <p>글이 존재하지 않습니다.</p>
-                        {% endif %}
                         <a href="{{ site.url }}" class="btn zoombtn">Return back</a>
+                        {% endif %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
