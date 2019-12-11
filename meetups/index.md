@@ -1,6 +1,6 @@
 ---
 layout: meetups-list
-title: MeetUps
+title: All Meetups
 excerpt: "A List of My MeetUp Logs"
 comments: false
 ---
