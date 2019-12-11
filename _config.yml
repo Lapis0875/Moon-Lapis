@@ -7,7 +7,7 @@ words_per_minute:   200
 logo:               'assets/img/logo_lapis.png'
 background:         'assets/img/jeju-ocean02.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
+locale:             ko_KR
 url:                https://lapis0875.github.io/
 
 # Jekyll
