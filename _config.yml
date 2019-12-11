@@ -16,12 +16,6 @@ encoding:           UTF-8
 collections:
   posts:
     output          : true
-  meetups:
-    output          : true
-    permalink       : /:collection/:year/:month/:title/
-  projects:
-    output          : true
-    permalink       : /:collection/:title/
 
 # Jekyll
 permalink:          :categories/:year/:month/:title
