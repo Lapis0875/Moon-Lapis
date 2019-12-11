@@ -11,7 +11,7 @@ locale:             ko_KR
 url:                https://lapis0875.github.io/
 
 # Jekyll
-permalink:          :title/
+permalink:          :categories/:year/:month/:day/:title
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
