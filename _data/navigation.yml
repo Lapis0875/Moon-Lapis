@@ -1,7 +1,7 @@
 # Site navigation links
 
-- title: Blog
-  url: blog/
+- title: TestCat
+  url: newcategory/
 
 - title: Projects
   url: projects/
