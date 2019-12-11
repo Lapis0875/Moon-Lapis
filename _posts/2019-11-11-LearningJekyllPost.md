@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll 블로그에서 Markdown 형식의 파일로 글 쓰는 법 알아보기"
 date: 2019-11-11
-categories: jekyll update
+categories: jekyll
 tags: [learning, Jekyll]
 comments: true
 ---
@@ -92,7 +92,6 @@ Make any link standout more when applying the `.btn` class.
 {% endhighlight %}
 
 <div markdown="0"><a href="#" class="btn">Primary Button</a></div>
-
 ## KBD
 
 You can also use `<kbd>` tag for keyboard buttons.
