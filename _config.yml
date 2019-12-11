@@ -9,6 +9,7 @@ background:         'assets/img/jeju-ocean02.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             ko_KR
 url:                https://lapis0875.github.io
+encoding:           UTF-8
 
 # Collections
 
@@ -21,10 +22,6 @@ collections:
   projects:
     output          : true
     permalink       : /:collection/:title/
-
-# Page backgrouds.
-bg_meetups        : 'assets/img/bg_meetups.png'
-bg_projects       : 'assets/img/bg_projects.png'
 
 # Jekyll
 permalink:          :categories/:year/:month/:title
