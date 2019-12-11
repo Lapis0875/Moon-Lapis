@@ -10,6 +10,24 @@ tiled_bg:           false   # Set this true if you want to tile your background 
 locale:             ko_KR
 url:                https://lapis0875.github.io/
 
+# Where things are
+source              : .
+destination         : ./_site
+collections_dir     : .
+plugins_dir         : _plugins
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+sass:
+  sass_dir:         _sass
+  style:            compressed
+collections:
+  posts:
+    output          : true
+  meetups:
+    output          : true
+    permalink       : /:collection/:year/:month/:title/
+
 # Jekyll
 permalink:          :categories/:year/:month/:title
 markdown:           kramdown
@@ -21,9 +39,6 @@ kramdown:
   toc_levels:       1..6
   enable_coderay:   false
 mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
 
 # Comments
 disqus_shortname:   Lapis0875

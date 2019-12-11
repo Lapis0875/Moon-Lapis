@@ -3,11 +3,11 @@ layout: page
 title: About Me
 tags: [about, information, Lapis, lapis0875]
 date: 2019-11-10
+permalink: about/
 comments: false
 ---
 
 <center>Hello, everyone. My name is Lapis, a student developer.</center>
-
 ## I learned
 * C, as my first programming language.
 * Java, as my second programming lang and first OOP lang.
