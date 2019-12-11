@@ -1,13 +1,13 @@
 # Site navigation links
 
 - title: Blog
-  url: blog/
+  url: /blog/
 
 - title: Meetups
-  url: meetups/
+  url: /meetups/
 
 - title: Projects
-  url: projects/
+  url: /projects/
 
 - title: Moon
   url: http://taylantatli.github.io/Moon/about
