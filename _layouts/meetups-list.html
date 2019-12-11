@@ -23,6 +23,10 @@ layout: compress
                 </div>
                 <div class="post-list">
                     {% for post in site.meetups %} 
+                        {% if post == null %}
+                        <p>찾으시는 페이지가 존재하지 않습니다.</p>
+                        {% endif %}
+                        <a href="{{ site.url }}" class="btn zoombtn">Return back</a>
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
