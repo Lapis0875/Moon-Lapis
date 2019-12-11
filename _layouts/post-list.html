@@ -23,7 +23,7 @@ layout: compress
                 </div>
                 <div class="post-list">
                     {% for post in site.posts %} 
-                        {% if post == null %}
+                        {% if post.category != project && post.category != meetups %}
                         <p>글이 존재하지 않습니다.</p>
                         <a href="{{ site.url }}" class="btn zoombtn">Return back</a>
                         {% endif %}

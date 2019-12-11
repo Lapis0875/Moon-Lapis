@@ -24,7 +24,6 @@ includes_dir        : _includes
 collections:
   posts:
     output          : true
-    permalink       : /:collection/:year/:month/:title/
   meetups:
     output          : true
     permalink       : /:collection/:year/:month/:title/
