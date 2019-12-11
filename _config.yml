@@ -18,9 +18,6 @@ plugins_dir         : _plugins
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
-sass:
-  sass_dir:         _sass
-  style:            compressed
 
 # Collections
 
@@ -48,6 +45,9 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
+sass:
+  sass_dir:         _sass
+  style:            compressed
 mathjax:            true
 
 # Comments

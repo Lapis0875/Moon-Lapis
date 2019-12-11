@@ -22,9 +22,9 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
+                    {% for post in site.projects %} 
                         {% if post == null %}
-                        <p>찾으시는 페이지가 존재하지 않습니다.</p>
+                        <p>글이 존재하지 않습니다.</p>
                         <a href="{{ site.url }}" class="btn zoombtn">Return back</a>
                         {% endif %}
                     <ul>
