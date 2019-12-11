@@ -1,6 +1,9 @@
 # Site navigation links
 
-- title: MeetUps
+- title: Blog
+  url: blog/
+
+- title: Meetups
   url: meetups/
 
 - title: Projects
