@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "프로그래머 모임 카테고리 테스트"
+title: "Meetups Test"
 date: 2019-12-11
 categories: meetups
 tags: [meetup]
