@@ -21,12 +21,22 @@ includes_dir        : _includes
 sass:
   sass_dir:         _sass
   style:            compressed
+
+# Collections
+
 collections:
   posts:
     output          : true
   meetups:
     output          : true
     permalink       : /:collection/:year/:month/:title/
+  projects:
+    output          : true
+    permalink       : /:collection/:year/:month/:title/
+
+# Page backgrouds.
+bg_meetups        : 'assets/img/bg_meetups.png'
+bg_projects       : 'assets/img/bg_projects.png'
 
 # Jekyll
 permalink:          :categories/:year/:month/:title
