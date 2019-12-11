@@ -10,15 +10,6 @@ tiled_bg:           false   # Set this true if you want to tile your background 
 locale:             ko_KR
 url:                https://lapis0875.github.io
 
-# Where things are
-source              : .
-destination         : ./_site
-collections_dir     : .
-plugins_dir         : _plugins
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
-
 # Collections
 
 collections:
