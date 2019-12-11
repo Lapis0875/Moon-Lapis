@@ -1,7 +1,7 @@
 # Site navigation links
 
-- title: TestCat
-  url: newcategory/
+- title: MeetUps
+  url: meetups/
 
 - title: Projects
   url: projects/
