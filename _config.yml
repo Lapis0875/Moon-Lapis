@@ -18,27 +18,27 @@ default:
       path          : "_projects"
       type          : ""      
     values:
-      layout        : page
+      layout        : "page"
       author        : "Lapis Developement"
-      categories    : projects
+      categories    : "projects"
       comments      : true
   -
     scope:
       path          : "_meetups"
       type          : ""      
     values:
-      layout        : post
+      layout        : "post"
       author        : "Lapis0875"
-      categories    : meetups
+      categories    : "meetups"
       comments      : true
   -
     scope:
       path          : "_blog"
       type          : ""      
     values:
-      layout        : post
+      layout        : "post"
       author        : "Lapis0875"
-      categories    : blog
+      categories    : "blog"
       comments      : true
 
 # Collections
