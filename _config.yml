@@ -15,7 +15,7 @@ encoding:           UTF-8
 default:
   -
     scope:
-      path          : "_project"
+      path          : "_projects"
       type          : ""      
     values:
       layout        : page
