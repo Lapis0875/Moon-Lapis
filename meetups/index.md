@@ -1,6 +1,6 @@
 ---
-layout: meetups-list
+layout: meetup-list
 title: All Meetups
-excerpt: "A List of My MeetUp Logs"
+excerpt: "A List of My Meetup Logs"
 comments: false
 ---
