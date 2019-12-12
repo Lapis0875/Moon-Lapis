@@ -23,13 +23,15 @@ layout: compress
                 </div>
                 <div class="post-list">
                     {% for collection in site.collections %}
-                    <a class="zoombtn" href="{{ site.url }}{{ collection.label }}">{{ collection.label }}</a>
+                    <a class="zoombtn" href="{{ site.url }}/{{ collection.label }}"><font size="20px">{{ collection.label }}</font></a>
+                    <hr size="10px" allign="center">
                     {% for post in collection.docs %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                             <p>{{ post.excerpt }}</p>
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
+                            <hr allign="center">
                         </li>
                     </ul>
                     {% endfor %}
