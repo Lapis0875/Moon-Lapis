@@ -28,9 +28,9 @@ layout: compress
                     {% endif %}
                     {% if page.categories contains projects %}
                     <a class="btn zoombtn" href="{{site.url}}/projects">
-                    {% elseif page.categories contains meetups %}
+                    {% elsif page.categories contains meetups %}
                     <a class="btn zoombtn" href="{{site.url}}/meetups">
-                    {% elseif page.categories contains blog %}
+                    {% elsif page.categories contains blog %}
                     <a class="btn zoombtn" href="{{site.url}}/blog">
                     {% else %}
                     <a class="btn zoombtn" href="{{site.url}}/posts">
