@@ -11,6 +11,36 @@ locale:             ko_KR
 url:                https://lapis0875.github.io
 encoding:           UTF-8
 
+# Default Settings
+default:
+  -
+    scope:
+      path          : "_project"
+      type          : "pages"      
+    values:
+      layout        : page
+      author        : "Lapis Developement"
+      categories    : projects
+      comments      : true
+  -
+    scope:
+      path          : "_meetups"
+      type          : "posts"      
+    values:
+      layout        : post
+      author        : "Lapis0875"
+      categories    : meetups
+      comments      : true
+  -
+    scope:
+      path          : "_blog"
+      type          : "posts"      
+    values:
+      layout        : post
+      author        : "Lapis0875"
+      categories    : blog
+      comments      : true
+
 # Collections
 
 collections:
