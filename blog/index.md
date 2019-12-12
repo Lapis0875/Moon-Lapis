@@ -2,6 +2,6 @@
 layout: blog
 title: All Blog Posts
 excerpt: "A List of my blog posts"
-permalink: /blog
+permalink: blog/
 comments: false
 ---

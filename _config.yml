@@ -12,12 +12,6 @@ url:                https://lapis0875.github.io
 encoding:           UTF-8
 
 # Collections
-defaults:
-  - scope:
-      path: "/_:collection"
-    values:
-      permalink     : :collection/:year/:month/:title
-      layout        : post
 
 collections:
   blog:
