@@ -24,6 +24,7 @@ layout: compress
                 <div class="post-list">
                     {% assign post_collections = site.collections | where_exp:"collection", "collection.label != posts" %}
                     <p>post_collections = {{ post_collections }}</p>
+                    
                     {% for collection in post_collections %}
                     <a class="zoombtn" href="{{ site.url }}/{{ collection.label }}"><font size="20px">{{ collection.label }}</font></a>
                     <hr size="10px" allign="center">
