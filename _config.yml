@@ -16,7 +16,7 @@ default:
   -
     scope:
       path          : "_project"
-      type          : "pages"      
+      type          : ""      
     values:
       layout        : page
       author        : "Lapis Developement"
@@ -25,7 +25,7 @@ default:
   -
     scope:
       path          : "_meetups"
-      type          : "posts"      
+      type          : ""      
     values:
       layout        : post
       author        : "Lapis0875"
@@ -34,7 +34,7 @@ default:
   -
     scope:
       path          : "_blog"
-      type          : "posts"      
+      type          : ""      
     values:
       layout        : post
       author        : "Lapis0875"
