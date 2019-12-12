@@ -18,7 +18,7 @@ default:
       path          : "_projects"
       type          : "projects"      
     values:
-      layout        : "page"
+      layout        : page
       author        : "Lapis Developement"
       categories    : "projects"
       comments      : true
@@ -27,7 +27,7 @@ default:
       path          : "_meetups"
       type          : "meetups"      
     values:
-      layout        : "post"
+      layout        : post
       author        : "Lapis0875"
       categories    : "meetups"
       comments      : true
@@ -36,7 +36,7 @@ default:
       path          : "_blog"
       type          : "blog"      
     values:
-      layout        : "post"
+      layout        : post
       author        : "Lapis0875"
       categories    : "blog"
       comments      : true
