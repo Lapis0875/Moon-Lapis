@@ -30,8 +30,7 @@ defaults:
       path          : "_projects"
       type          : "projects"      
     values:
-      layout        : page"
-      author        : "Lapis Developement"
+      layout        : "page"
       categories    : "projects"
       comments      : true
   -
