@@ -23,6 +23,7 @@ layout: compress
                 </div>
                 <div class="post-list">
                     {% for collection in site.collections %}
+                    <a class="zoombtn" href="{{ site.url }}{{ collection.label }}">{{ collection.label }}</a>
                     {% for post in collection.docs %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
