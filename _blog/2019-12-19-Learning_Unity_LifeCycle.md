@@ -104,7 +104,9 @@ public class LifeCycle : MonoBehaviour
 
 
 
-이 스크립트를 ![유니티 화면](..\assets\img\blog\Unity_LifeCycle.jpg)
+이 스크립트를 
+
+![유니티 화면]({{ "/assets/img/blog/Unity_LifeCycle.jpg" | absolute_url }})
 
 Scene에 배치한 캡슐에 부여한 후, 게임을 실행해보았다.
 
