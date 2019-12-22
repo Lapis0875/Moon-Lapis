@@ -1,13 +1,10 @@
 ---
-title: "Unity Life Cycle 공부하기"
+title: "Unity 공부 - Life Cycle(생명주기)"
 date: 2019-12-19
 categories: blog
 tags: [blog, Unity]
 comments: true
 ---
-
-
-# Unity 공부 1일차
 
 오늘은 유니티 엔진의 라이프사이클에 대해 공부했다.
 
