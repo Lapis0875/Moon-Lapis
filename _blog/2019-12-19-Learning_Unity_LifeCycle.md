@@ -47,7 +47,7 @@ Awake() -> OnEnable() -> Start() -> FixedUpdate() -> Update() -> LateUpdate() ->
 
 
 
-코드로 작성한 후 게임을 실행해 보았다.
+이제 이 라이프사이클을 코드로 작성해보자.
 
 
 
@@ -104,11 +104,15 @@ public class LifeCycle : MonoBehaviour
 
 
 
-이 스크립트를 
+Scene에 캡슐 하나를 배치한 뒤, 이 스크립트를 부여한 후, 게임을 실행해 잘 작동하는지 확인해보자.
 
-![유니티 화면]({{ "/assets/img/blog/Unity_LifeCycle.jpg" | absolute_url }})
+{% include youtube.html id = "90KIVYW5uao" %}
 
-Scene에 배치한 캡슐에 부여한 후, 게임을 실행해보았다.
+
+
+
+
+
 
 
 
