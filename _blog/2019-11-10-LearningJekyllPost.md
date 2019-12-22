@@ -2,8 +2,8 @@
 layout: post
 title: "Jekyll 블로그에서 Markdown 형식의 파일로 글 쓰는 법 알아보기"
 date: 2019-11-11
-categories: jekyll
-tags: [learning, Jekyll]
+categories: blog
+tags: [blog, Markdown, Jekyll, Moon_Theme]
 comments: true
 ---
 앞으로 Jekyll 블로그를 운영하기 때문에, Jekyll에 Markdown 형식의 글을 올리는 방법과, Markdown 형식의 글을 쓰는 방법에 대해 알아보았다.
