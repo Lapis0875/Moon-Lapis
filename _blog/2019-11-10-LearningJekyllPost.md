@@ -63,7 +63,16 @@ comments: true
 
 ## 코드 하이라이팅
 
-Markdown 에서는 ` ```(언어별 확장자) ~ ``` ` 로 사용할 수 있습니다.
+Markdown 에서는 ` \`\`\`(언어별 확장자) ~ \`\`\` ` 로 사용할 수 있습니다.
+
+```py
+import os
+
+def myfunc():
+    print('Hello!')
+
+myfunc()
+```
 
 
 
