@@ -97,7 +97,7 @@ myfunc()
 
 Moon Theme에서는 
 
-```markdown
+```
 {% highlight css %}
 #container {
   float: left;
