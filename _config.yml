@@ -67,6 +67,10 @@ sass:
   style:            compressed
 mathjax:            true
 
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
 # Comments
 disqus_shortname:   lapis0875
 
