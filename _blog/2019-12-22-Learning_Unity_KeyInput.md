@@ -184,6 +184,15 @@ public class Player : MonoBehaviour
 
         if (Input.GetMouseButtonUp(1))
             Debug.Log("에너지포를 발사합니다!");
+        
+        if (Input.GetButtonDown("Horizontal"))
+   			Debug.Log("좌우로 이동합니다.");
+   
+		if (Input.GetButton('Jump'))
+   			Debug.Log("점프 에너지를 충전하는 중입니다...");
+   
+		if (Input.GetButtonUp("Jump"))
+			Debug.Log("슈퍼점프!!!");
     }
 }
 ```
