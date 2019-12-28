@@ -119,7 +119,8 @@ comments: true
 
 5. ### 지정된 버튼 유형 입력 받기
 유니티는 Jump, Horizontal 등 특정 유형의 키들을 묶어서 유형별로 제공한다. 이러한 유형들은 Input.GetButton 메소드를 통해 키 입력을 받는다.이러한 Input 버튼들의 유형을 확인하거나 수정하려면, Project Settings > Input 에서 확인하고, 변경할 수 있다.
-   ![Unity_KeyInput_Buttons]({{ "/assets/screenshot.jpg" | absolute_url }})
+   
+   ![Unity_KeyInput_Buttons]({{ "/assets/img/blog/Unity_KeyInput_Buttons.jpg" | absolute_url }})
    
    
    이제 코드로 작성해보자.
