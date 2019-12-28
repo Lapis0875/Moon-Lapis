@@ -57,29 +57,30 @@ comments: true
 
    여기서 각 메소드들에 인자로 전달된 KeyCode 클래스는 키보드, 컨트롤러 등의 각각의 키에 해당하는 변수들을 가진 클래스로, 우리는 이 클래스를 사용해 입력을 받을 키를 지정한다.
    
-
-   이제 코드로 작성해 보자.
+이제 코드로 작성해 보자.
    
-```csharp
+   ```csharp
    void Update()
    {
-   	/*
-   	* KeyCode : 키보드, 컨트롤러 등의 키를 담당하는 클래스.
-   	* 키보드 큰 엔터 : KeyCode.Return
-   	* 숫자 키패드 엔터 : KeyCode.KeypadEnter
-   	* esc : KeyCode.Escape
-   	*/
+      	/*
+      	* KeyCode : 키보드, 컨트롤러 등의 키를 담당하는 클래스.
+      	* 키보드 큰 엔터 : KeyCode.Return
+      	* 숫자 키패드 엔터 : KeyCode.KeypadEnter
+       * esc : KeyCode.Escape
+      	*/
    
-   	if (Input.GetKeyDown(KeyCode.U))
-   		Debug.Log("접속중인 유저 목록을 확인합니다.");
+       if (Input.GetKeyDown(KeyCode.U))
+           Debug.Log("접속중인 유저 목록을 확인합니다.");
    
-   	if (Input.GetKey(KeyCode.LeftShift))
-   		Debug.Log("플레이어가 달리고 있습니다.");
+       if (Input.GetKey(KeyCode.LeftShift))
+           Debug.Log("플레이어가 달리고 있습니다.");
    
-   	if (Input.GetKeyUp(KeyCode.R))
-           Debug.Log("탄창을 재장전했습니다!");
+       if (Input.GetKeyUp(KeyCode.R))
+              Debug.Log("탄창을 재장전했습니다!");
    }
-```
+   ```
+   
+   
 
    
 
@@ -114,10 +115,11 @@ comments: true
    }
       ```
    
-   5. 
+   
 
 5. ### 지정된 버튼 유형 입력 받기
-유니티는 Jump, Horizontal 등 특정 유형의 키들을 묶어서 유형별로 제공한다. 이러한 유형들은 Input.GetButton 메소드를 통해 키 입력을 받는다.이러한 Input 버튼들의 유형을 확인하거나 수정하려면, Project Settings > Input 에서 확인하고, 변경할 수 있다.![Unity_KeyInput_Buttons](D:\Projects\Jekyll\Lapis0875.github.io\assets\img\blog\Unity_KeyInput_Buttons.jpg)
+유니티는 Jump, Horizontal 등 특정 유형의 키들을 묶어서 유형별로 제공한다. 이러한 유형들은 Input.GetButton 메소드를 통해 키 입력을 받는다.이러한 Input 버튼들의 유형을 확인하거나 수정하려면, Project Settings > Input 에서 확인하고, 변경할 수 있다.
+   ![Unity_KeyInput_Buttons]({{ "/assets/screenshot.jpg" | absolute_url }})
    
    
    이제 코드로 작성해보자.
