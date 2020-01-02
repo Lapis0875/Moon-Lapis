@@ -4,6 +4,7 @@ date: 2019-12-30
 categories: blog
 tags: [blog, Unity]
 comments: true
+published: false
 ---
 
 오늘은 유니티 엔진에서 오브젝트를 움직이는 방법을 공부했다.
