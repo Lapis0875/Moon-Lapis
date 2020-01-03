@@ -19,7 +19,6 @@ comments: true
 
    유니티에서는 키 입력을 구분해 입력 값을 보다 세밀하게 다룰 수 있도록 한다.
 
-   
 2. ### 아무 키의 입력 상태 받기
 
    유니티에서는 입력을 Input 클래스에서 관리한다. 이 Input 클래스에는 여러 변수와 메소드가 존재하는데, 여기서 anyKey~ 변수들은 입력된 키의 종류에 관계없이 키가 입력되었을때 true값을 가진다.
@@ -111,7 +110,7 @@ comments: true
    	if (Input.GetMouseButtonUp(1))
       		Debug.Log("에너지포를 발사합니다!");
    }
-      ```
+   ```
    
    
    
@@ -201,7 +200,7 @@ public class Player : MonoBehaviour
 
 Scene에 캡슐 하나를 배치한 뒤, 이 스크립트를 부여한 후, 게임을 실행해 잘 작동하는지 확인해보자.
 
-{% include youtube.html id = "tLbOBqlERBQ" %}
+{% include youtube.html id = "SSUT50weNOU" %}
 
 
 
