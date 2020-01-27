@@ -26,11 +26,9 @@ layout: compress
                       {% include read-time.html %}
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
-                    {% if page.categories == 'projects' %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects">
-                    {% elsif page.categories == 'meetups' %}
+                    {% if page.collection == 'meetups' %}
                     <a class="btn zoombtn" href="{{site.url}}/meetups">
-                    {% elsif page.categories == 'blog' %}
+                    {% elsif page.collection == 'blog' %}
                     <a class="btn zoombtn" href="{{site.url}}/blog">
                     {% else %}
                     <a class="btn zoombtn" href="{{site.url}}/posts">
