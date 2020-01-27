@@ -32,7 +32,7 @@ defaults:
   -
     scope:
       path          : "_projects"
-      type          : "posts"      
+      type          : "projects"      
     values:
       layout        : "project"
       categories    : "projects"
@@ -42,14 +42,14 @@ defaults:
       path          : "_meetups"
       type          : "posts"      
     values:
-      layout        : "post"
+      layout        : "meetups"
       author        : "Lapis0875"
       categories    : "meetups"
       comments      : true
   -
     scope:
       path          : "_blog"
-      type          : "posts"      
+      type          : "blog"      
     values:
       layout        : "post"
       author        : "Lapis0875"
