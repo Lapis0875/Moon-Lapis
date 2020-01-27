@@ -40,7 +40,7 @@ defaults:
   -
     scope:
       path          : "_meetups"
-      type          : "posts"      
+      type          : "meetups"      
     values:
       layout        : "meetups"
       author        : "Lapis0875"
