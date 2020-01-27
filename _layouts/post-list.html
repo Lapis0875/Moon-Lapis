@@ -22,7 +22,7 @@ layout: compress
                     </a>
                 </div>
                 <div class="post-list">
-                    {% assign post_collections = site.collections | where_exp:"collection", "collection.label != posts" %}
+                    {% assign post_collections = site.collections | where_exp:"collection", "collection.label != 'posts'" %}
                     <p>post_collections = {{ post_collections }}</p>
                     
                     {% for collection in post_collections %}

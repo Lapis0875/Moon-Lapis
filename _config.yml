@@ -16,19 +16,23 @@ encoding:           UTF-8
 collections:
   blog:
     output          : true
+    permalink       : :collection/:year/:month/:title
   meetups:
     output          : true
     permalink       : :collection/:year/:month/:title
   projects:
     output          : true
     permalink       : :collection/:title
+  posts:
+    output          : false
+    permalink       : :collection/:year/:month/:title
 
 # Default Settings
 defaults:
   -
     scope:
       path          : "_projects"
-      type          : "projects"      
+      type          : "posts"      
     values:
       layout        : "project"
       categories    : "projects"
@@ -36,7 +40,7 @@ defaults:
   -
     scope:
       path          : "_meetups"
-      type          : "meetups"      
+      type          : "posts"      
     values:
       layout        : "post"
       author        : "Lapis0875"
@@ -45,7 +49,7 @@ defaults:
   -
     scope:
       path          : "_blog"
-      type          : "blog"      
+      type          : "posts"      
     values:
       layout        : "post"
       author        : "Lapis0875"
