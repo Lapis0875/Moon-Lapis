@@ -20,12 +20,14 @@ layout: compress
                     <h4>category : {{ page.categories }}</h4>
                     <h4>upload : {{ page.date | date_to_string }}</h4>
                     <h4>author : {{ page.author }}</h4>
+                    <h4>{{site.url}}/{{page.collection}}</h4>
                     {% if site.reading_time %}
                     <p class="reading-time">
                       <i class="fa fa-clock-o"></i>
                       {% include read-time.html %}
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
+                    <a class="btn zoombtn" href="{{site.url}}/" + {{page.collection}}>
                     {% if page.collection == 'meetups' %}
                     <a class="btn zoombtn" href="{{site.url}}/meetups">
                     {% elsif page.collection == 'blog' %}
