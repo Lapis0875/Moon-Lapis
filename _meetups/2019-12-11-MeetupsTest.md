@@ -4,6 +4,7 @@ title: "Meetups Test"
 date: 2019-12-11
 categories: meetups
 tags: [meetup]
+place: 엔젤리너스
 comments: false
 ---
 

@@ -1,7 +1,7 @@
 # Site
-title:              Lapis
-bio:                'Korean student, programmer. Interested in Game developement, App, Web developement, ML.'
-description:        "Lapis0875's github pages. I'm using this site as my portfolio page."
+title:              라피스
+bio:                '고등학생 개발자입니다. Python, C#을 주로 사용하며, 앱 개발을 주로 합니다. 웹 개발과 ML에 흥미를 가지고 있습니다.'
+description:        "라피스의 삽질하며 배우는 테크블로그"
 reading_time:       false
 words_per_minute:   200
 logo:               'assets/img/logo_lapis.png'
@@ -42,7 +42,7 @@ defaults:
       path          : "_meetups"
       type          : "meetups"      
     values:
-      layout        : "meetups"
+      layout        : "post"
       author        : "Lapis0875"
       categories    : "meetups"
       comments      : true
