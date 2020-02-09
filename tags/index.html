@@ -5,11 +5,16 @@ description: "An archive of posts sorted by tag."
 comments: false
 ---
 
+<p>Currently Work In Progress. Trying to include my custom collections in site.tags...</p>
+
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tags_list = site_tags | split:',' | sort %}
+
+<!-- 여기서 아무것도 나오지 않아서 tag[0] == (태그) 라는 내용이 페이지에 출력되지 않은걸 보아 site.tags 자체가 비어있는것으로 보이며, 이는 site.tags가 posts 콜렉션 이외의 콜렉션들의 tag들을 반영하지 않기 때문이다. -->
 {% for tag in site.tags %}
 <p>tag[0] == {{ tag[0] }}</p>
 {% endfor %}
+
 <p>site.tags = {{site.tags}}, tags_list = {{tags_list}}, site.tags.size = {{site.tags.size}}</p>
 <ul class="entry-meta inline-list">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
