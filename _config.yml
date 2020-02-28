@@ -4,7 +4,7 @@ bio:                '고등학생 개발자입니다. Python, C#을 주로 사�
 description:        "라피스의 삽질하며 배우는 테크블로그"
 reading_time:       false
 words_per_minute:   200
-logo:               'assets/img/logo_lapis.png'
+logo:               'lapis_profile.png'
 background:         'assets/img/jeju-ocean02.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             ko_KR
