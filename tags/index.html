@@ -15,6 +15,18 @@ comments: false
 <p>tag[0] == {{ tag[0] }}</p>
 {% endfor %}
 
+{% for tag in site.blog.tags %}
+<p>tag == {{ tag }}</p>
+{% endfor %}
+
+{% for tag in site.meetups.tags %}
+<p>tag == {{ tag }}</p>
+{% endfor %}
+
+{% for tag in site.projects.tags %}
+<p>tag == {{ tag }}</p>
+{% endfor %}
+
 <p>site.tags = {{site.tags}}, tags_list = {{tags_list}}, site.tags.size = {{site.tags.size}}</p>
 <ul class="entry-meta inline-list">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
