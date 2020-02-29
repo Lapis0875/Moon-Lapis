@@ -4,7 +4,7 @@ date: 2020-02-29
 tags: [uses]
 ---
 
-## Software
+## Programming
 
 PyCharm - Python!!
 
@@ -12,4 +12,8 @@ IntelliJ IDEA - Java
 
 Visual Studio - C, C#
 
-Visual Studio Code - as text editor
+Visual Studio Code - perfect text editor
+
+## Phone
+
+Samsung Galaxy A90 5G
