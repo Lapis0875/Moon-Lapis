@@ -23,12 +23,23 @@ collections:
   projects:
     output          : true
     permalink       : :collection/:title
+  uses:
+    output          : true
+    permalink       : :collection/:title
   posts:
     output          : false
     permalink       : :collection/:year/:month/:title
 
 # Default Settings
 defaults:
+  -
+    scope:
+      path          : "_uses"
+      type          : "pages"      
+    values:
+      layout        : "page"
+      categories    : "uses"
+      comments      : true
   -
     scope:
       path          : "_projects"
