@@ -5,7 +5,7 @@ description:        "라피스의 삽질하며 배우는 테크블로그"
 reading_time:       false
 words_per_minute:   200
 logo:               'assets/img/lapis_profile.png'
-background:         'assets/img/bg/night_sky01.jpg'
+background:         'assets/img/bg/JEJAE_profile_bg(freesource).jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             ko_KR
 url:                https://lapisblog.me
@@ -122,6 +122,7 @@ instagram:          sleepylapis
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
+discord_invite:     ks5m5HE
 
 # Gems
 gems:
