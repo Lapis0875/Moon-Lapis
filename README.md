@@ -1,7 +1,7 @@
 # Lapis0875's Github pages
 I made this website to use as my tech-blog and portfolio.
 I used Jekyll to construct this, and I used a theme **[Moon](https://taylantatli.github.io/Moon)**
-I'm using icons from **[FontAwsome 5.8.2](https://fontawesome.com/icons)**
+I'm using icons from **[FontAwesome 5.12.1](https://fontawesome.com/icons)**
 From here on down, I'll give you a description of the theme.
 
 
