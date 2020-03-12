@@ -28,11 +28,12 @@ collections:
     permalink       : :collection/:year/:month/:title
 
 # Default Settings
+# "The different types that are available to you are pages, posts, drafts or any collection in your site." from Jekyll Doc(v.4.0.0)
 defaults:
   -
     scope:
       path          : "_projects"
-      type          : "pages"      
+      type          : "projects"      
     values:
       layout        : "project"
       categories    : "projects"
@@ -40,7 +41,7 @@ defaults:
   -
     scope:
       path          : "_meetups"
-      type          : "posts"      
+      type          : "meetups"      
     values:
       layout        : "post"
       author        : "Lapis0875"
@@ -49,7 +50,7 @@ defaults:
   -
     scope:
       path          : "_blog"
-      type          : "posts"      
+      type          : "blog"      
     values:
       layout        : "post"
       author        : "Lapis0875"
@@ -89,7 +90,7 @@ disqus_shortname:   lapis0875
 #bing-verify:
 email:              lapis0875@kakao.com
 twitter:            sleepylapis
-facebook:           lapis0875
+# facebook:           lapis0875
 github-url:         Lapis0875
 #stackoverflow:     123456/username   # from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
