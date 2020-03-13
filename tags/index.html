@@ -6,51 +6,6 @@ comments: false
 ---
 
 <p>Currently Work In Progress. Trying to include my custom collections in site.tags...</p>
-
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign tags_list = site_tags | split:',' | sort %}
-
-<!-- 여기서 아무것도 나오지 않아서 tag[0] == (태그) 라는 내용이 페이지에 출력되지 않은걸 보아 site.tags 자체가 비어있는것으로 보이며, 이는 site.tags가 posts 콜렉션 이외의 콜렉션들의 tag들을 반영하지 않기 때문이다. -->
-{% for tag in site.tags %}
-<p>tag[0] == {{ tag[0] }}</p>
-{% endfor %}
-
-{% for tag in site.blog.tags %}
-<p>tag == {{ tag }}</p>
-{% endfor %}
-
-{% for tag in site.meetups.tags %}
-<p>tag == {{ tag }}</p>
-{% endfor %}
-
-{% for tag in site.projects.tags %}
-<p>tag == {{ tag }}</p>
-{% endfor %}
-
-<p>site.tags = {{site.tags}}, tags_list = {{tags_list}}, site.tags.size = {{site.tags.size}}</p>
-<ul class="entry-meta inline-list">
-  <p>Blog tags : </p>
-  {% for item in (0..site.blog.tags.size) %}{% unless forloop.last %}
-    <p>item = {item}</p>
-    {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-  	<li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
-  {% endunless %}{% endfor %}
-
-  <p>Meetups tags : </p>
-  {% for item in (0..site.meetups.tags.size) %}{% unless forloop.last %}
-  <p>item = {item}</p>
-  {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-  <li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
-  {% endunless %}{% endfor %}
-
-  <p>Projects tags : </p>
-  {% for item in (0..site.projects.tags.size) %}{% unless forloop.last %}
-  <p>item = {item}</p>
-  {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-  <li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.tags[this_word].size }}</span></a></li>
-  {% endunless %}{% endfor %}
-</ul>
-
 <!-- Collection Tags assignment. Code from 
 https://stackoverflow.com/questions/36958975/listing-jekyll-collection-pages-by-tags/46827538 -->
 {% assign blog_tags =  site.blog | map: 'tags' | join: ','  | split: ',' | uniq %}
@@ -58,45 +13,26 @@ https://stackoverflow.com/questions/36958975/listing-jekyll-collection-pages-by-
 {% assign projects_tags =  site.projects | map: 'tags' | join: ','  | split: ',' | uniq %}
 
 <!-- Tags Archieve -->
-{% for tag in blog_tags %}
 <ul class="entry-meta inline-list">
 <h2 id="{{ this_word }}" class="tag-heading">Tags in Blog</h2>
+{% for tag in blog_tags %}
 <li><a href="#{{ tag }}" class="tag"><span class="term">{{ tag }}</span>
     <spanclass="count">{{ tags[tag].size }}</span>
   </a></li>
-  </ul>
-<ul>
 {% endfor %}
+<h2 id="{{ this_word }}" class="tag-heading">Tags in Meetups</h2>
 {% for tag in meetups_tags %}
-<ul class="entry-meta inline-list">
-  <h2 id="{{ this_word }}" class="tag-heading">Tags in Meetups</h2>
   <li><a href="#{{ tag }}" class="tag"><span class="term">{{ tag }}</span>
       <spanclass="count">{{ tags[tag].size }}</span>
     </a></li>
-</ul>
-<ul>
 {% endfor %}
+<h2 id="{{ this_word }}" class="tag-heading">Tags in Projects</h2>
 {% for tag in projects_tags %}
-<ul class="entry-meta inline-list">
-  <h2 id="{{ this_word }}" class="tag-heading">Tags in Projects</h2>
   <li><a href="#{{ tag }}" class="tag"><span class="term">{{ tag }}</span>
       <spanclass="count">{{ tags[tag].size }}</span>
     </a></li>
-</ul>
-<ul>
 {% endfor %}
-
-{% for item in (0..site.tags.size) %}{% unless forloop.last %}
-{% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-<article>
-  <h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
-  <ul>
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-    <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endif %}{% endfor %}
-  </ul>
-</article><!-- /.hentry -->
-{% endunless %}{% endfor %}
+</ul>
 
 <!-- Posts related with tags -->
 <h2>Blog</h2>
@@ -106,5 +42,4 @@ https://stackoverflow.com/questions/36958975/listing-jekyll-collection-pages-by-
 {% if doc.tags contains tag %}
 {% if doc.title != null %}
 <li class="entry-title"><a href="{{ site.url }}{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
-{% endif %}
-{% endfor %}{% endfor %}
+{% endif %}{% endif %}{% endfor %}{% endfor %}
