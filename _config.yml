@@ -79,6 +79,10 @@ plugins:
 # Comments
 disqus_shortname:   lapis0875
 
+# Utterances config
+github_repo_name: Moon-Lapis  # Github Repository of this website to use Utterances. https://github.com/utterance/utterances
+label_name: Utterances
+
 # Social
 # if you don't have any of social below, comment the line.
 #google:

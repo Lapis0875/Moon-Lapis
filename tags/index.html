@@ -5,7 +5,6 @@ description: "An archive of posts sorted by tag."
 comments: false
 ---
 
-<p>Currently Work In Progress. Trying to include my custom collections in site.tags...</p>
 <!-- Collection Tags assignment. Code from 
 https://stackoverflow.com/questions/36958975/listing-jekyll-collection-pages-by-tags/46827538 -->
 {% assign blog_tags =  site.blog | map: 'tags' | join: ','  | split: ',' | uniq %}
@@ -13,32 +12,57 @@ https://stackoverflow.com/questions/36958975/listing-jekyll-collection-pages-by-
 {% assign projects_tags =  site.projects | map: 'tags' | join: ','  | split: ',' | uniq %}
 
 <!-- Tags Archieve -->
+<h3>Collections : Blog</h3>
 <ul class="entry-meta inline-list">
-<h2 id="{{ this_word }}" class="tag-heading">Tags in Blog</h2>
 {% for tag in blog_tags %}
 <li><a href="#{{ tag }}" class="tag"><span class="term">{{ tag }}</span>
-    <spanclass="count">{{ tags[tag].size }}</span>
+    <span class="count">{{ tags[tag].size }}</span>
   </a></li>
 {% endfor %}
-<h2 id="{{ this_word }}" class="tag-heading">Tags in Meetups</h2>
+</ul>
+
+<h3>Collections : Meetups</h3>
+<ul class="entry-meta inline-list">
 {% for tag in meetups_tags %}
   <li><a href="#{{ tag }}" class="tag"><span class="term">{{ tag }}</span>
-      <spanclass="count">{{ tags[tag].size }}</span>
+      <span class="count">{{ tags[tag].size }}</span>
     </a></li>
 {% endfor %}
-<h2 id="{{ this_word }}" class="tag-heading">Tags in Projects</h2>
+</ul>
+
+<h2>Collections : Projects</h2>
+<ul class="entry-meta inline-list">
 {% for tag in projects_tags %}
   <li><a href="#{{ tag }}" class="tag"><span class="term">{{ tag }}</span>
-      <spanclass="count">{{ tags[tag].size }}</span>
+      <span class="count">{{ tags[tag].size }}</span>
     </a></li>
 {% endfor %}
 </ul>
 
 <!-- Posts related with tags -->
-<h2>Blog</h2>
+<h3>Tags in Blog</h3>
 {% for tag in blog_tags %}
-<h3 id="{{ tag }}" class="tag-heading">{{ tag }}</h2>
+<p id="{{ tag }}" class="tag-heading">{{ tag }}</p>
 {% for doc in site.blog.docs %}
+{% if doc.tags contains tag %}
+{% if doc.title != null %}
+<li class="entry-title"><a href="{{ site.url }}{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
+{% endif %}{% endif %}{% endfor %}{% endfor %}
+
+<h3>Meetups</h3>
+{% for tag in meetups_tags %}
+<p id="{{ tag }}" class="tag-heading">{{ tag }}</p>
+{% for doc in site.meetups.docs %}
+<p>{{ doc }}</p>
+{% if doc.tags contains tag %}
+{% if doc.title != null %}
+<li class="entry-title"><a href="{{ site.url }}{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
+{% endif %}{% endif %}{% endfor %}{% endfor %}
+
+<h3>Projects</h3>
+{% for tag in projects_tags %}
+<h4 id="{{ tag }}" class="tag-heading">{{ tag }}</h4>
+{% for doc in site.projects.docs %}
 {% if doc.tags contains tag %}
 {% if doc.title != null %}
 <li class="entry-title"><a href="{{ site.url }}{{ doc.url }}" title="{{ doc.title }}">{{ doc.title }}</a></li>
